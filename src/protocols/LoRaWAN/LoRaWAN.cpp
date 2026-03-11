@@ -2643,8 +2643,8 @@ bool LoRaWANNode::execMacCommand(uint8_t cid, uint8_t* optIn, uint8_t lenIn, uin
       if(delay == 0) {
         delay = 1;
       }
-      this->rxDelays[1] = (RadioLibTime_t)delay * (RadioLibTime_t)1000; // Rx1 delay
-      this->rxDelays[2] = this->rxDelays[1] + 1000;   // Rx2 delay
+      this->rxDelays[1] = (RadioLibTime_t)delay * (RadioLibTime_t)RX1_DELAY; // Rx1 delay
+      this->rxDelays[2] = this->rxDelays[1] + RX2_DELAY;   // Rx2 delay
 
       memcpy(&this->bufferSession[RADIOLIB_LORAWAN_SESSION_RX_TIMING_SETUP], optIn, lenIn);
 
