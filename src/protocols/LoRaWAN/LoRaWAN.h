@@ -6,8 +6,8 @@
 #include "../../utils/Cryptography.h"
 
 // Rx delay setting for Class A
-#define RX1_DELAY                                               (200)
-#define RX2_DELAY                                               (200)
+#define RX1_DELAY                                               (1000)
+#define RX2_DELAY                                               (1000)
 
 // activation mode
 #define RADIOLIB_LORAWAN_MODE_OTAA                              (0x07AA)

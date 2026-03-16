@@ -1806,6 +1806,7 @@ int16_t LoRaWANNode::receiveDownlink() {
   RADIOLIB_ASSERT(state);
 
   state = this->receiveClassC();
+  // printf("receiveDownlink.state: %d\r\n", state);
   return(state);
 }
 
